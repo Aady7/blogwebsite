@@ -1,0 +1,13 @@
+<%- include('partials/header'); -%>
+
+<h1><%=starting_home%></h1>
+<p><%=homeStartingContent%></p>
+
+<%inputs.forEach(function(input){%>
+   <h1><%=input.title%></h1>
+   <p><%=input.text.substring(0,100)+"..."%>
+<a href="/posts/<%=input.title%>">Read More</a></p>
+    <%})%>
+<%console.log(inputs)%>
+
+<%- include('partials/footer'); -%>
